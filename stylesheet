@@ -5,11 +5,24 @@
     font-style: normal;
 }
 
+/* Standard (heller) Modus */
 body {
+    background-color: #f4f4f4; /* Helles Grau */
+    color: #333; /* Dunkles Grau für den Text */
     font-family: 'EB Garamond', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #333;
-}
+  }
+  
+  /* Dunkler Modus, wenn der Nutzer ihn bevorzugt */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #222; /* Dunkles Grau für den Hintergrund */
+      color: #ddd; /* Heller Text */
+    }
+  
+    /* Optional: Helle Links im Dark Mode */
+    a {
+      color: #ffcc00; /* Zum Beispiel ein sanftes Gelb für Links */
+    }
+  }
+  
 
