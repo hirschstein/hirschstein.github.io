@@ -5,23 +5,61 @@
     font-style: normal;
 }
 
-/* Standard (heller) Modus */
+/* Basis-Layout */
 body {
-    background-color: #f4f4f4; /* Helles Grau */
-    color: #333; /* Dunkles Grau für den Text */
+    background-color: #f1f1f1; /* Sehr helles Grau für den Hintergrund */
+    color: #333333; /* Dunkelgrau für den Text (sanfter als reines Schwarz) */
     font-family: 'EB Garamond', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
   }
   
-  /* Dunkler Modus, wenn der Nutzer ihn bevorzugt */
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #222; /* Dunkles Grau für den Hintergrund */
-      color: #ddd; /* Heller Text */
-    }
+  /* Links (falls vorhanden) */
+  a {
+    color: #0066cc; /* Weiches Blau für Links */
+    text-decoration: none;
+  }
   
-    /* Optional: Helle Links im Dark Mode */
-    a {
-      color: #ffcc00; /* Zum Beispiel ein sanftes Gelb für Links */
+  a:hover {
+    color: #004d99; /* Dunkleres Blau für den Hover-Effekt */
+  }
+  
+  /* Kopfzeile */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'EB Garamond', serif;
+    color: #222222; /* Etwas dunkleres Grau für Überschriften */
+    margin-top: 0;
+    line-height: 1.3;
+  }
+  
+  /* Absatz */
+  p {
+    font-size: 1rem;
+    color: #444444; /* Mittelgrau für Absätze */
+    margin-bottom: 1rem;
+  }
+  
+  /* Zitate */
+  blockquote {
+    font-style: italic;
+    border-left: 4px solid #b0b0b0;
+    padding-left: 1rem;
+    color: #555555;
+    background-color: #f9f9f9; /* Sehr helles Grau für Hintergrund von Zitaten */
+    margin: 1rem 0;
+  }
+  
+  /* Listen */
+  ul, ol {
+    margin-left: 2rem;
+    color: #444444; /* Mittelgrau für Listen */
+  }
+  
+  /* Responsive Text (größer auf kleineren Bildschirmen) */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 1.1rem;
     }
   }
   
